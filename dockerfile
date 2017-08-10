@@ -19,4 +19,4 @@ RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
 EXPOSE 5000
 
 # Default command for this image
-CMD python run.py 
+CMD python /usr/src/app/run.py 

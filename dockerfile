@@ -10,8 +10,8 @@ RUN apt-get install -y python-pip python-dev build-essential
 
 #copy directory into docker
 COPY * /usr/src/app/
-COPY app/ /usr/src/app/ 
-COPY db_repository /usr/src/app/
+COPY app/* /usr/src/app/app/ 
+COPY db_repository/* /usr/src/app/db_repository/
 
 #install python requirements
 RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt

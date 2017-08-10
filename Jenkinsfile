@@ -14,6 +14,7 @@ node {
 
 	stage('update') {
 		sh 'docker tag codechan:latest smeden/codechan:latest'
+		sh 'docker login -u smeden -p Pgbc8rpe7c7
 		sh 'docker push smeden/codechan:latest'
 	}
 }

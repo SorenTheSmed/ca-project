@@ -1,0 +1,5 @@
+node {
+	stage('Predefined tests') {
+		sh 'tests.py'
+	}
+}

@@ -9,6 +9,6 @@ node {
 
 
 	stage('Predefined tests') {
-		sh 'docker run codechan /usr/src/app/tests.py'
+		sh 'docker run codechan "python /usr/src/app/tests.py"'
 	}
 }

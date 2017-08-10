@@ -11,4 +11,9 @@ node {
 	stage('Predefined tests') {
 		sh 'docker run codechan python /usr/src/app/tests.py'
 	}
+
+	stage('update') {
+		sh 'docker tag codechan:latest smeden/codechan:latest'
+		sh 'docker push smeden/codechan:latest'
+	}
 }

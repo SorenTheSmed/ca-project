@@ -9,6 +9,6 @@ node {
 
 
 	stage('Predefined tests') {
-		sh 'tests.py'
+		sh 'python tests.py'
 	}
 }

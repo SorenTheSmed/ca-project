@@ -16,7 +16,7 @@ RUN pip install -no-cache-dir -r /usr/src/app/requirements.txt
 
 
 # Add a default port containers from this image should expose
-EXPOSE 
+EXPOSE 5000
 
-# Add a default command for this image
-CMD 
+# Default command for this image
+CMD python run.py 

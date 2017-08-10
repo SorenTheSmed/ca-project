@@ -4,7 +4,7 @@ node {
 	}
 	
 	stage('Docker build') {
-		sh 'docker build -t codechan.'
+		sh 'docker build -t codechan .'
 	}
 
 

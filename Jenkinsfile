@@ -4,11 +4,11 @@ node {
 	}
 	
 	stage('Docker build') {
-		sh 'docker build -t CoDeChanInitialBuild .'
+		sh 'docker build -t codechan.'
 	}
 
 
 	stage('Predefined tests') {
-		sh 'docker run CoDeChanInitialBuild /usr/src/app/tests.py'
+		sh 'docker run codechan /usr/src/app/tests.py'
 	}
 }
